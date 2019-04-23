@@ -1,0 +1,35 @@
+Smartdoc is a command line program that generates a cross-linked software
+document in HTML format, with the following command line UI prototype.
+
+
+    smartdoc SRS.txt code.py
+
+
+The input is Software Requirements Specification in a plain text file
+(e.g., SRS.txt) and a source code file (e.g., code.py).
+
+
+The output will be SRS.html and code.html, which are meant to help
+software maintainer to easily find a corresponding requirement (in
+SRS.html) by clicking a link in the converted source code, code.html.
+
+
+For simplicity, SRS will strictly follow the following format.
+
+
+@Requirement [id=rq1] [description=???]
+ Rationale  [id=ra1???] [description=???]
+ TestCase   [id=tc???] [description=???]
+ Priority   [Low/Medium/High]
+
+
+We consider only one source code file.  We put "{see rq1}" anywhere in
+the source code file (as a comment) to create a link.
+
+
+A hyperlink pointing to the corresponding requirement in SRS.html will
+be created in code.html.  In the meantime, a hyperlink pointing to the
+corresponding function in code.html will be created in SRS.html.
+
+
+SRS.html will include a Traceability Matrix for requirements and test cases.
