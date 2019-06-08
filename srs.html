@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+   <pre>
+
+<p style="font-size: 40px;" >
+
+ @Requirement <a href = "code.html#{see rq1}" id="[id = rq1]">[id = rq1]</a> [description = Return a list where each element is a word from fname.]
+ Rationale  <a href = "code.html#{see ra1_open}" id="[id = ra1_open]">[id = ra1_open]</a> [description = Open a file]
+Rationale  <a href = "code.html#{see ra1_strip}" id="[id=ra1_strip]">[id=ra1_strip]</a> [description = Remove characters specified at the beginning and end of a string (default to spaces or newlines) or character sequences. Only characters at the beginning or at the end, but not at the middle can be delete.]
+Rationale  <a href = "code.html#{see ra1_split}" id="[id=ra1_split]">[id=ra1_split]</a> [description = Slicing strings by specifying delimiters.]
+Rationale  <a href = "code.html#{see ra1_append}" id="[id=ra1_append]">[id=ra1_append]</a> [description = Default to all empty characters, including spaces, newlines (\n), tabs (\t), etc.]
+Rationale  <a href = "code.html#{see ra1_close}" id="[id = ra1_close]">[id = ra1_close]</a> [description = Close a file]
+ TestCase   [id=tc_example] [description= If in the fname,is an word , then a list of [e,x,a,m,p,l,e] will be returned]
+ Priority   [High]
+
+@Requirement <a href = "code.html#{see rq2}" id="[id = rq2]">[id = rq2]</a> [description = Return a dictionary given list lst.  Each key is an element in the lst. The value is always 1.]
+ Rationale  <a href = "code.html#{see ra2_dictionary}" id="[id=ra2_dictionary]">[id=ra2_dictionary]</a> [description=For a dictionary, the d[w] means the value of the key w in the dictionary.]
+ TestCase   [id=tc_odd] [description= When the list is [1,3,5,7], then the 1st,3th,5th,7th content of the dictionary will be changed to the value 1]
+ Priority   [Medium]
+
+@Requirement <a href = "code.html#{see rq3}" id="[id=rq3]">[id=rq3]</a> [description = Return a dictionary where each key is a word both in the file fname and in the dictionary english_dictionary, and the corresponding value is the frequency of that word.]
+ Rationale  <a href = "code.html#{see ra3_lower}" id="[id=ra3_lower]">[id=ra3_lower]</a> [description=Convert all uppercase characters in a string to lowercase]
+ TestCase   [id=tc_HelloWorld] [description = Firstly we use file2lst function to make each element in the HelloWorld a word, which is [H,e,l,l,o,W,o,r,l,d]. Then use the .lower() to make conversion of capital letters into lowercase letters, that is [h,e,l,l,o,w,o,r,l,d]. Each word will be judged whether in the english_dictionary, and the add the current number of the word as its value. So the final return of HelloWorld is  and that is 
+ Priority   [Medium]
+
+@Requirement <a href = "code.html#{see rq4}" id="[id=rq4]">[id=rq4]</a> [description = Return a sorted list of tuples, each tuple containing a key and a value. Note that the tuples are order in descending order of the value.]
+ Rationale  <a href = "code.html#{see ra4_sort}" id="[id=ra4_sort]">[id=ra4_sort]</a> [description=Sort lists according to the specified key.]
+ TestCase   [id=tc_test] [description = When the input is 
+ Priority   [Low]
+
+@Requirement <a href = "code.html#{see rq5}" id="[id=rq5]">[id=rq5]</a> [description = We get the whole word appeared in the words.txt in lowercase, and then get the frequency of the word not only in the brexit-news.txt but also firstly exists in the dictionary words.txt. ]
+ Rationale  <a href = "code.html#{see ra5_main}" id="[id=ra5_main]">[id=ra5_main]</a> [description=Under if__name_='main': the code will only be executed in the case (that is, the file is executed directly as a script), and if it is import to other scripts, will not be executed.]
+ TestCase   [id=tc_main] [description = When the words.txt has words [a,B,c,d,f,k,W],then the ed is. If the content of brexit-news.txt is This is only a test case.fwkaabcwk, then the output will be Priority   [High]
+</p>
+     </pre>
+  </body>
+</html>
